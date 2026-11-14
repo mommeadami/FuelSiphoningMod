@@ -1,4 +1,4 @@
-"""Build the Fuel Siphoning install ZIP against Starsector 0.98.5a-RC5."""
+"""Build the Fuel Siphoning Reloaded install ZIP against Starsector 0.98.5a-RC5."""
 
 import argparse
 import os
@@ -12,7 +12,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 ROOT = Path(__file__).resolve().parent
 GAME_JARS = ("starfarer.api.jar", "starfarer_obf.jar", "fs.common_obf.jar", "json.jar", "log4j-1.2.9.jar", "lwjgl.jar", "lwjgl_util.jar")
 JAR_NAME = "FuelSiphoning.jar"
-MOD_FOLDER = "Fuel Siphoning"
+MOD_FOLDER = "Fuel Siphoning Reloaded"
 
 
 def find_game_jars(installation):
@@ -59,7 +59,7 @@ def build(installation, luna_jar):
         mod_jar = directory / JAR_NAME
         subprocess.run([jar, "--create", "--file", str(mod_jar), "-C", str(classes), "."], check=True)
 
-        archive = directory / "fuel-siphoning.zip"
+        archive = directory / "fuel-siphoning-reloaded.zip"
         with ZipFile(archive, "w", ZIP_DEFLATED) as package:
             for name in ("mod_info.json", "FUEL_SIPHONING_OPTIONS.ini", "sun_fs.version"):
                 package.write(ROOT / name, f"{MOD_FOLDER}/{name}")

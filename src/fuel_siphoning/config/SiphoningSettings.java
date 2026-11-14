@@ -36,10 +36,10 @@ public record SiphoningSettings(float fuelConsumptionMult, float fuelPriceMult,
             loaded.applyCampaignModifiers();
             current = loaded;
         } catch (Exception e) {
-            Global.getLogger(SiphoningSettings.class).error("Could not load Fuel Siphoning settings", e);
+            Global.getLogger(SiphoningSettings.class).error("Could not load Fuel Siphoning Reloaded settings", e);
             if (Global.getSector().getCampaignUI() != null) {
                 Global.getSector().getCampaignUI().addMessage(
-                        "Could not load Fuel Siphoning settings. See starsector.log.", Color.RED);
+                        "Could not load Fuel Siphoning Reloaded settings. See starsector.log.", Color.RED);
             }
         }
     }

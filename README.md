@@ -1,19 +1,19 @@
-# Fuel Siphoning
+# Fuel Siphoning Reloaded
 
-Fuel Siphoning adds a toggleable campaign ability that converts supplies into fuel while your fleet is inside a nebula cloud. This fork targets **Starsector 0.98.5a-RC5**. The original mod is by Sundog. See the [upstream repository](https://github.com/NateNBJ/FuelSiphoning) and [original forum thread](https://fractalsoftworks.com/forum/index.php?topic=15272.0).
+Fuel Siphoning Reloaded is a fork of Fuel Siphoning by Sundog (NateNBJ). It adds a toggleable campaign ability that converts supplies into fuel while your fleet is inside a nebula cloud. This update targets **Starsector 0.98.5a-RC5** and reduces the fuel yield. Sundog created the original ability and artwork. [Original repository](https://github.com/NateNBJ/FuelSiphoning) · [Original forum thread](https://fractalsoftworks.com/forum/index.php?topic=15272.0)
 
 | Location | Fuel gained per supply |
 | --- | ---: |
 | Nebula clouds in ordinary systems | 1 |
 | Nebula clouds inside nebula systems | 2 |
 
-Fuel production scales with fleet fuel capacity and current burn level. It still works at a standstill. While siphoning, the fleet is easier to detect and leaves an orange contrail. Siphoning stops when you leave the cloud, run out of supplies, or fill your fuel tanks.
+Fuel production scales with fleet fuel capacity and current burn level. It still works at a standstill. While siphoning, the fleet is easier to detect and leaves an orange contrail. Siphoning stops when you leave the cloud, run out of supplies, or fill your fuel tanks. The last conversion consumes only the supplies needed for the fuel added.
 
 ## Install and use
 
 1. Exit Starsector. If upgrading, back up any custom settings and move the old Fuel Siphoning folder out of `mods`.
-2. Extract the install ZIP into `mods` so that `mods/Fuel Siphoning/mod_info.json` exists.
-3. Enable **Fuel Siphoning** in the launcher. Load a campaign and assign **Siphon Fuel** to a slot on the campaign ability bar if needed.
+2. Extract the [install ZIP](https://github.com/mommeadami/FuelSiphoningMod/releases/latest/download/fuel-siphoning-reloaded.zip) into `mods` so that `mods/Fuel Siphoning Reloaded/mod_info.json` exists.
+3. Enable **Fuel Siphoning Reloaded** in the launcher. Load a campaign and assign **Siphon Fuel** to a slot on the campaign ability bar if needed.
 4. Enter a nebula cloud and toggle the ability on. Its tooltip shows the current yield.
 
 With LunaLib enabled, configure the mod in LunaSettings. Otherwise, edit `FUEL_SIPHONING_OPTIONS.ini` in the installed mod folder and reload the game. The two yield settings use units of fuel per supply and start at the new defaults when upgrading. Carry over any fuel price, hyperspace consumption, sensor profile, and conversion speed settings you customized in an older INI.
@@ -26,7 +26,7 @@ Use Python 3.9+ and JDK 17 or later. Have `javac` and `jar` on `PATH`, or set `J
 python build.py "/path/to/Starsector" "/path/to/LunaLib/jars/LunaLib.jar"
 ```
 
-The script writes `dist/fuel-siphoning.zip`. LunaLib is optional when running the mod.
+The script writes `dist/fuel-siphoning-reloaded.zip`. LunaLib is optional when running the mod.
 
 ## Development
 
