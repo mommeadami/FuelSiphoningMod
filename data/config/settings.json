@@ -1,0 +1,7 @@
+{
+	"graphics":{
+		"fuel_siphoning":{
+			"mod_icon":"sun_fs/graphics/icons/mod_icon.png",
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "id": "sun_fuel_siphoning",
+    "name": "Fuel Siphoning",
+    "utility": true,
+    "author": "Sundog",
+    "version": "1.5.0",
+    "description": "Adds a fleet ability that converts supplies into fuel while inside nebula clouds.",
+    "gameVersion": "0.98.5a-RC5",
+    "jars": ["jars/FuelSiphoning.jar"],
+    "modPlugin": "fuel_siphoning.ModPlugin"
+}

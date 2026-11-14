@@ -1,12 +1,9 @@
 {
-    "masterVersionFile":"https://raw.githubusercontent.com/NateNBJ/FuelSiphoning/master/sun_fs.version",
-    "directDownloadURL":"https://github.com/NateNBJ/FuelSiphoning/releases/latest/download/Fuel.Siphoning.zip",
-    "modName":"Fuel Siphoning",
-    "modThreadId":15272,
-    "modVersion":
-    {
-        "major":1,
-        "minor":4,
-        "patch":0,
-    },
+    "masterVersionFile": "https://raw.githubusercontent.com/mommeadami/FuelSiphoningMod/master/sun_fs.version",
+    "modName": "Fuel Siphoning",
+    "modVersion": {
+        "major": 1,
+        "minor": 5,
+        "patch": 0
+    }
 }

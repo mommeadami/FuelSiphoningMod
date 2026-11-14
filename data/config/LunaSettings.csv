@@ -1,0 +1,13 @@
+fieldID,fieldName,fieldType,defaultValue,fieldDescription,minValue,maxValue,tab
+sun_fs_fuelConsumptionMult,Fuel Consumption Multiplier,Double,1,"Scales how quickly your fleet will consume fuel while traveling through hyperspace.
+
+A value of 2.0 will double your fuel consumption and a value of 0.5 will halve it.",0.1,10,
+sun_fs_fuelPriceMult,Fuel Price Multiplier,Double,1,"Scales the base price of fuel.
+
+Fuel costs 25 credits in the base game, so, if the price of fuel is unchanged by other mods, then a value of 2 will set the price to 50 credits and a value of 0.2 will set it to 5 credits.",0.1,10,
+sun_fs_sensorProfileIncreasePercent,Sensor Profile Increase Percent,Int,300,Adjusts how much farther away your fleet can be detected while siphoning fuel.,0,1000,
+sun_fs_fuelPerSupplyNebulaSystem,Fuel per Supply in Nebula Systems,Double,2,Units of fuel gained per supply in nebula clouds inside nebula systems.,0.1,10,
+sun_fs_fuelPerSupplyNormal,Fuel per Supply in Ordinary Nebulae,Double,1,Units of fuel gained per supply in nebula clouds outside nebula systems.,0.1,10,
+sun_fs_conversionRateMult,Conversion Rate Multiplier,Double,1,"Scales how quickly supplies are converted into fuel.
+
+Note that the fuel capacity and current burn level of your fleet also scale the conversion rate. If it seems like the ability is working too slowly, try moving quickly through nebulae before adjusting this setting.",0.1,5,
